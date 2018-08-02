@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  RouteTracking
 //
 //  Created by hello on 02/08/2018.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-
-@interface ViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+@interface MapViewController : UIViewController <CLLocationManagerDelegate>;
 
 
 @end
