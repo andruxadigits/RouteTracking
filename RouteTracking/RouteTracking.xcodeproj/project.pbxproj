@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E918358F9329A43FC5C0D4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9186C0D8C126867C33F874 /* AppDelegate.m */; };
+		5E9184577676BD8976F2010F /* RouteTrackingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E918B7ADED87211C3124BCE /* RouteTrackingUITests.m */; };
+		5E9189FA63E705B7014D3397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E918747A6CCF49655A1E6A7 /* Main.storyboard */; };
+		5E918B765A5116015CC886AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9184C87229C21953D2F60B /* ViewController.m */; };
+		5E918C77087D5832806D4F45 /* RouteTrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91824F11B6F251711706D7 /* RouteTrackingTests.m */; };
+		5E918C9BC825DD799E268FD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91891A445128055DA92181 /* main.m */; };
+		5E918CA625A9BFB989792A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9189759167E58095B2F08A /* Assets.xcassets */; };
+		5E918DB6D731F5E60EE263F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E918D76B49B321C70426D72 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E9183ABB8F42D1FAA258047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E9188574354DD2589744199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E91801D212F923605C6879A;
+			remoteInfo = RouteTracking;
+		};
+		5E918DFF0976F2470F6718AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E9188574354DD2589744199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E91801D212F923605C6879A;
+			remoteInfo = RouteTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E91807230F4629B65609ED1 /* RouteTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E91807E223BCCF52A64A070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E91818AB9D95E57548C2BA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E91824F11B6F251711706D7 /* RouteTrackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteTrackingTests.m; sourceTree = "<group>"; };
+		5E91829C073AE90951B841CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E91830E8717BE3C1DCBD3D1 /* RouteTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E91834403474066B7E44B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		5E9184C87229C21953D2F60B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E9184F7D39A5515CCD812B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E918684E4D6F40030A2F3F3 /* RouteTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9186C0D8C126867C33F874 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E9188D409350F3742053A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		5E91891A445128055DA92181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E9189759167E58095B2F08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E918B7ADED87211C3124BCE /* RouteTrackingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteTrackingUITests.m; sourceTree = "<group>"; };
+		5E918FA2F46935FC9D9A84E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E918568B0B497CCCF7EAA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E91898DAC26F159F296D98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E918C371BAC93BC2101F6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E918067E2D44C1AA926F71C /* RouteTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E9188D409350F3742053A5E /* Info.plist */,
+				5E91824F11B6F251711706D7 /* RouteTrackingTests.m */,
+			);
+			path = RouteTrackingTests;
+			sourceTree = "<group>";
+		};
+		5E918070CBE72960839D513A /* RouteTrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E91834403474066B7E44B95 /* Info.plist */,
+				5E918B7ADED87211C3124BCE /* RouteTrackingUITests.m */,
+			);
+			path = RouteTrackingUITests;
+			sourceTree = "<group>";
+		};
+		5E9180C8242CC9C212C5541A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E91807230F4629B65609ED1 /* RouteTracking.app */,
+				5E91830E8717BE3C1DCBD3D1 /* RouteTrackingTests.xctest */,
+				5E918684E4D6F40030A2F3F3 /* RouteTrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E918363F3CCDC790E325A0E = {
+			isa = PBXGroup;
+			children = (
+				5E9180C8242CC9C212C5541A /* Products */,
+				5E91860BEF908376669B82B4 /* RouteTracking */,
+				5E918067E2D44C1AA926F71C /* RouteTrackingTests */,
+				5E918070CBE72960839D513A /* RouteTrackingUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		5E91860BEF908376669B82B4 /* RouteTracking */ = {
+			isa = PBXGroup;
+			children = (
+				5E918FA2F46935FC9D9A84E6 /* Info.plist */,
+				5E9189759167E58095B2F08A /* Assets.xcassets */,
+				5E918D76B49B321C70426D72 /* LaunchScreen.storyboard */,
+				5E91891A445128055DA92181 /* main.m */,
+				5E91829C073AE90951B841CE /* AppDelegate.h */,
+				5E9186C0D8C126867C33F874 /* AppDelegate.m */,
+				5E918747A6CCF49655A1E6A7 /* Main.storyboard */,
+				5E91818AB9D95E57548C2BA4 /* ViewController.h */,
+				5E9184C87229C21953D2F60B /* ViewController.m */,
+			);
+			path = RouteTracking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E91801D212F923605C6879A /* RouteTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E91819D2E08A68F1F460632 /* Build configuration list for PBXNativeTarget "RouteTracking" */;
+			buildPhases = (
+				5E91890C59AEFBA20C063F1F /* Sources */,
+				5E918C371BAC93BC2101F6AB /* Frameworks */,
+				5E918575DEA960AFDC82A4A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RouteTracking;
+			productName = RouteTracking;
+			productReference = 5E91807230F4629B65609ED1 /* RouteTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E9184CDCDC22DF69C42023E /* RouteTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E9182AE26CECBC5D3D5C88E /* Build configuration list for PBXNativeTarget "RouteTrackingUITests" */;
+			buildPhases = (
+				5E918B164EBEE81327817071 /* Sources */,
+				5E91898DAC26F159F296D98D /* Frameworks */,
+				5E91833D5BFFDF3A2BE22B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E918CA68DFD9E83185D118E /* PBXTargetDependency */,
+			);
+			name = RouteTrackingUITests;
+			productName = RouteTrackingUITests;
+			productReference = 5E918684E4D6F40030A2F3F3 /* RouteTrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5E9187078F6B1A4980246ABB /* RouteTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E918132CD60B7F7206A0765 /* Build configuration list for PBXNativeTarget "RouteTrackingTests" */;
+			buildPhases = (
+				5E918CE4EA12BC1FA722DE1B /* Sources */,
+				5E918568B0B497CCCF7EAA9A /* Frameworks */,
+				5E9180595D2D8F3AD3FA847B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E918195AF9D23397C99E948 /* PBXTargetDependency */,
+			);
+			name = RouteTrackingTests;
+			productName = RouteTrackingTests;
+			productReference = 5E91830E8717BE3C1DCBD3D1 /* RouteTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E9188574354DD2589744199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "___FULLUSERNAME___`";
+			};
+			buildConfigurationList = 5E9185467FC246784C5DD88F /* Build configuration list for PBXProject "RouteTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E918363F3CCDC790E325A0E;
+			productRefGroup = 5E9180C8242CC9C212C5541A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E91801D212F923605C6879A /* RouteTracking */,
+				5E9187078F6B1A4980246ABB /* RouteTrackingTests */,
+				5E9184CDCDC22DF69C42023E /* RouteTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E9180595D2D8F3AD3FA847B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E91833D5BFFDF3A2BE22B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E918575DEA960AFDC82A4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E918CA625A9BFB989792A6B /* Assets.xcassets in Resources */,
+				5E918DB6D731F5E60EE263F6 /* LaunchScreen.storyboard in Resources */,
+				5E9189FA63E705B7014D3397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E91890C59AEFBA20C063F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E918C9BC825DD799E268FD7 /* main.m in Sources */,
+				5E918358F9329A43FC5C0D4C /* AppDelegate.m in Sources */,
+				5E918B765A5116015CC886AD /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E918B164EBEE81327817071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9184577676BD8976F2010F /* RouteTrackingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E918CE4EA12BC1FA722DE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E918C77087D5832806D4F45 /* RouteTrackingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E918195AF9D23397C99E948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E91801D212F923605C6879A /* RouteTracking */;
+			targetProxy = 5E9183ABB8F42D1FAA258047 /* PBXContainerItemProxy */;
+		};
+		5E918CA68DFD9E83185D118E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E91801D212F923605C6879A /* RouteTracking */;
+			targetProxy = 5E918DFF0976F2470F6718AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E918747A6CCF49655A1E6A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E91807E223BCCF52A64A070 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E918D76B49B321C70426D72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E9184F7D39A5515CCD812B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E9182515FD3F1AD5EA924AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RouteTracking.app/RouteTracking";
+				INFOPLIST_FILE = RouteTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5E91833AB6B54022CD1A6E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E918444E4A172AB63FD0E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RouteTracking.app/RouteTracking";
+				INFOPLIST_FILE = RouteTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		5E9184832B001A3A21D1F585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RouteTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RouteTracking;
+			};
+			name = Release;
+		};
+		5E918696ACC51D6852A7F3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RouteTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E9187B870AAD6259CC9C78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RouteTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E91899A1AF0D9CABBF1A067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RouteTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = digits.RouteTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RouteTracking;
+			};
+			name = Debug;
+		};
+		5E918C0A67A8C5DD7A6F4632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E918132CD60B7F7206A0765 /* Build configuration list for PBXNativeTarget "RouteTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9182515FD3F1AD5EA924AB /* Debug */,
+				5E918444E4A172AB63FD0E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E91819D2E08A68F1F460632 /* Build configuration list for PBXNativeTarget "RouteTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9187B870AAD6259CC9C78A /* Debug */,
+				5E918696ACC51D6852A7F3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E9182AE26CECBC5D3D5C88E /* Build configuration list for PBXNativeTarget "RouteTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E91899A1AF0D9CABBF1A067 /* Debug */,
+				5E9184832B001A3A21D1F585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E9185467FC246784C5DD88F /* Build configuration list for PBXProject "RouteTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E91833AB6B54022CD1A6E5D /* Debug */,
+				5E918C0A67A8C5DD7A6F4632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E9188574354DD2589744199 /* Project object */;
+}
