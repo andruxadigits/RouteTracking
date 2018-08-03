@@ -20,7 +20,8 @@
     }
     - (void) start {
     self.mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
-    [self.presenter pushViewController:self.mapViewController animated:YES];
+        [self.mapViewController.navigationItem setHidesBackButton:YES animated:NO];
+        [self.presenter pushViewController:self.mapViewController animated:YES];
     }
 
 

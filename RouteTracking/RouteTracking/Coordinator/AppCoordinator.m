@@ -18,7 +18,7 @@
         self.rootViewController = [ [UINavigationController alloc] init ];
         UIViewController *emptyViewController = [[UIViewController alloc] init];
         emptyViewController.view.backgroundColor = [UIColor whiteColor];
-        [self.rootViewController pushViewController:emptyViewController animated:false];
+        [self.rootViewController pushViewController:emptyViewController animated:NO];
         self.mapViewCoordinator = [[MapViewCoordinator alloc] initWithPresenter:self.rootViewController];
     }
     return self;
