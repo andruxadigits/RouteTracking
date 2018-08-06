@@ -8,14 +8,15 @@
 
 #import "MapViewController.h"
 #import <Mapkit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #define METERS_MILE 2000
 #define METERS_FEET 3.28084
+
 @interface MapViewController ()
 @property (strong,nonatomic) CLLocationManager *locationManager;
 @property (strong,nonatomic) MKMapView *mapView;
 @property (strong,nonatomic) UIStackView *stackView;
 @property (strong,nonatomic) UIButton *startButton;
-
 @end
 
 @implementation MapViewController{
@@ -34,17 +35,21 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     [self.locationManager setDelegate:self];
     [self.locationManager requestWhenInUseAuthorization];
+  /*  if (CLLocationManager.locationServicesEnabled) {
+        [self.locationManager requestLocation];
+        [self.locationManager requestLocation];
+    }*/
    CLAuthorizationStatus *status = CLLocationManager.authorizationStatus;
 
    if (status == kCLAuthorizationStatusNotDetermined || status == kCLAuthorizationStatusDenied || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
        [self.locationManager requestAlwaysAuthorization];
        [self.locationManager requestWhenInUseAuthorization];
+
    }
-    [self.locationManager startUpdatingLocation];
-  //  [self.locationManager startUpdatingHeading];
-    /* if (CLLocationManager.locationServicesEnabled) {
-        [self.locationManager requestLocation];
-    }*/
+
+   [self.locationManager startUpdatingLocation];
+   [self.locationManager startUpdatingHeading];
+
 
 
      self.stackView = [self setupStackView];
@@ -61,18 +66,19 @@
      spacing = screenSize/50;
      [self.stackView setSpacing:spacing];
      [NSLayoutConstraint activateConstraints:@[
-             [self.stackView.leftAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leftAnchor constant:spacing],
-             [self.stackView.rightAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.rightAnchor constant:-spacing],
+             [self.stackView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:spacing],
+             [self.stackView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-spacing],
              [self.stackView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:spacing],
-             [self.stackView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-spacing],
+           //  [self.stackView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-spacing],
 
              [self.mapView.leftAnchor constraintEqualToAnchor:self.stackView.leftAnchor],
              [self.mapView.rightAnchor constraintEqualToAnchor:self.stackView.rightAnchor],
              [self.mapView.widthAnchor constraintEqualToAnchor:self.mapView.heightAnchor multiplier:1.0f],
 
-             [self.startButton.heightAnchor constraintEqualToConstant:screenSize/100],
-             [self.startButton.widthAnchor constraintEqualToAnchor:self.startButton.heightAnchor multiplier:2.0f],
-
+             [self.startButton.heightAnchor constraintEqualToConstant:screenSize/20],
+           //  [self.startButton.widthAnchor constraintEqualToAnchor:self.startButton.heightAnchor multiplier:3.0f],
+         //    [self.startButton.centerXAnchor constraintEqualToAnchor:self.mapView.centerXAnchor],
+           // [self.startButton.topAnchor constraintEqualToAnchor:self.mapView.bottomAnchor constant:spacing]
 
              ]];
 
@@ -85,13 +91,18 @@
     stackView.translatesAutoresizingMaskIntoConstraints = NO;
     [stackView setAxis:UILayoutConstraintAxisVertical];
     stackView.alignment = UIStackViewAlignmentCenter;
+    stackView.distribution = UIStackViewDistributionEqualCentering;
     return stackView;
 }
 - (UIButton *)setupStartButton {
     UIButton *button = [UIButton new];
     button.translatesAutoresizingMaskIntoConstraints = NO;
-    button.backgroundColor = [UIColor redColor];
+    button.backgroundColor = [UIColor yellowColor];
     [button setTitle:@"START" forState:UIControlStateNormal];
+    [button setTitle:@"FINISH" forState:UIControlStateSelected];
+    [button setSelected:NO];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+   // button.
     [button addTarget:self action:@selector(startButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -105,12 +116,18 @@
 }
 
 - (void) startButtonTapped {
+    if (self.startButton.state == UIControlStateNormal)
+    [self.startButton setSelected:YES];
+    else {
+        [self.startButton setSelected:NO];
+        []
+    }
 
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 
    //LLocationCoordinate2D coordinates[]
-     CLLocation *oldLocationNew = oldLocation;
+    CLLocation *oldLocationNew = oldLocation;
     CLLocationCoordinate2D oldCoordinates;
     CLLocationCoordinate2D newCoordinates;
     CLLocationCoordinate2D coordinates[2];
@@ -138,16 +155,20 @@
     CLLocation *location = locations.lastObject;
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2*METERS_MILE, 2*METERS_MILE);
     [self.mapView setRegion:viewRegion animated:YES];
-    CLLocationCoordinate2D coordinates[2];
-    if (oldCoordinate.latitude == 0 && oldCoordinate.longitude == 0)
-        coordinates[0] = location.coordinate;
-    else
-        coordinates[0] = oldCoordinate;
-    coordinates[1] = location.coordinate;
+    if (self.startButton.state == UIControlStateSelected)
+    {
+        CLLocationCoordinate2D coordinates[2];
+        if (oldCoordinate.latitude == 0 && oldCoordinate.longitude == 0)
+            coordinates[0] = location.coordinate;
+        else
+            coordinates[0] = oldCoordinate;
+        coordinates[1] = location.coordinate;
 
-    MKPolyline *polyline= [MKPolyline polylineWithCoordinates:coordinates count:2] ;
-    [self.mapView addOverlay:polyline];
-    oldCoordinate = location.coordinate;
+        MKPolyline *polyline= [MKPolyline polylineWithCoordinates:coordinates count:2] ;
+        [self.mapView addOverlay:polyline];
+        oldCoordinate = location.coordinate;
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
