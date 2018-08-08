@@ -8,4 +8,5 @@
 
 @interface MapViewCoordinator : NSObject <Coordinator>
 - (instancetype) initWithPresenter:(UINavigationController *) presenter;
+
 @end

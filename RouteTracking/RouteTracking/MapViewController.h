@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol MKMapViewDelegate <NSObject>;
+
+@class Route;
+
+@protocol MapViewControllerDelegate <NSObject>
+- (void)selectedRouteDetailButton:(Route *)route;
 @end
 
-@protocol CLLocationManagerDelegate<NSObject>
-        @end
-@interface MapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>;
-
+@interface MapViewController : UIViewController
+@property(nonatomic) NSObject <MapViewControllerDelegate> *delegate;
 
 @end
