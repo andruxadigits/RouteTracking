@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  RouteTracking
+
+  Created by hello on 08/08/2018.
+    Copyright © 2018 hello`. All rights reserved.
+*/
+"Your location" = "Your location";
+"time" = "time";
+"distance" = "distance";
+"speed" = "speed";
+"Total time:" = "Total time:";
+"Total distance:" = "Total distance:";
+"Average speed:" = "Average speed:";
+"START" = "START";
+"FINISH" = "FINISH";
