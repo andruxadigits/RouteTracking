@@ -9,8 +9,8 @@
 "time" = "hora";
 "distance" = "distancia";
 "speed" = "velocidad";
-"Total time:  " = "Tiempo Total:  ";
-"Total distance:  " = "Distancia total:  ";
-"Average speed:  " = "Velocidad media:  ";
+"Total time:" = "Tiempo Total:";
+"Total distance:" = "Distancia total:";
+"Average speed:" = "Velocidad media:";
 "START" = "COMIENZO";
 "FINISH" = "FINISH";

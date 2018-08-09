@@ -10,6 +10,5 @@
 @property (readonly, nonatomic) CGFloat time;
 @property (readonly, nonatomic) CGFloat distance;
 @property (readonly, nonatomic) CGFloat speed;
--(instancetype) initWithTime:(CGFloat)time distance:(CGFloat)distance speed:(CGFloat)speed;
--(instancetype) initWithTime:(CGFloat)time distance:(CGFloat)distance;
+-(instancetype) initWithTime:(NSTimeInterval)time distance:(CGFloat)distance;
 @end

@@ -9,8 +9,8 @@
 "time" = "время";
 "distance" = "расстояние";
 "speed" = "скорость";
-"Total time:  " = "Общее время:  ";
-"Total distance:  " = "Общее расстояние:  ";
-"Average speed:  " = "Средняя скорость:  ";
+"Total time:" = "Общее время:";
+"Total distance:" = "Общее расстояние:";
+"Average speed:" = "Средняя скорость:";
 "START" = "НАЧАТЬ";
 "FINISH" = "ЗАКОНЧИТЬ";

@@ -6,7 +6,7 @@
 #import "Route.h"
 
 @interface Route ()
-@property (readwrite, nonatomic) CGFloat time;
+@property (readwrite, nonatomic) NSTimeInterval time;
 @property (readwrite, nonatomic) CGFloat distance;
 @property (readwrite, nonatomic) CGFloat speed;
 
@@ -14,17 +14,8 @@
 @implementation Route {
 
 }
--(instancetype) initWithTime:(CGFloat)time distance:(CGFloat)distance speed:(CGFloat)speed {
-    self = [super init];
-    if (self) {
-        self.time = time;
-        self.distance = distance;
-        self.speed = speed;
 
-    }
-    return self;
-}
--(instancetype) initWithTime:(CGFloat)time distance:(CGFloat)distance {
+-(instancetype) initWithTime:(NSTimeInterval)time distance:(CGFloat)distance {
     self = [super init];
     if (self) {
         self.time = time;

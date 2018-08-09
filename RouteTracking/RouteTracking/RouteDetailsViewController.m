@@ -7,13 +7,14 @@
 #import "Route.h"
 @interface RouteDetailsViewController ()
 @property (strong, nonatomic) UIStackView *stackView;
-@property (strong,nonatomic) UILabel *totalTime;
-@property (strong,nonatomic) UILabel *totalDistance;
-@property (strong,nonatomic) UILabel *averageSpeed;
+@property (strong,nonatomic) UITextView *totalTime;
+@property (strong,nonatomic) UITextView *totalDistance;
+@property (strong,nonatomic) UITextView *averageSpeed;
 
 @end
 @implementation RouteDetailsViewController {
 
+    NSDateFormatter *_dateFormatter;
 }
 
 
@@ -26,24 +27,26 @@
 
     self.totalTime = [self setupTotalTime];
     [self.stackView addArrangedSubview:self.totalTime];
-    NSString *timeStr = [NSString stringWithFormat:@"%2f", self.route.time];
 
-    [self.totalTime setText:[NSString stringWithFormat:@"%@%@",NSLocalizedString(@"Total time:  ", nil),timeStr]];
-    //[self.totalTime setText:[NSString stringWithFormat:@"%@%@",@"Total time:  " ,timeStr]];
+    _dateFormatter = [[NSDateFormatter alloc] init];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.route.time];
+    [_dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
+    [_dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    NSString *timeStr = [_dateFormatter stringFromDate:date];
+
+    [self.totalTime setText:[NSString stringWithFormat:@"%@%@%@",NSLocalizedString(@"Total time:", nil),@"\n",timeStr]];
 
     self.totalDistance = [self setupTotalDistance];
     [self.stackView addArrangedSubview:self.totalDistance];
-    NSString *distanceStr = [NSString stringWithFormat:@"%2f", self.route.distance];
+    NSString *distanceStr = [NSString stringWithFormat:@"%.02f", self.route.distance];
 
-    [self.totalDistance setText:[NSString stringWithFormat:@"%@%@",NSLocalizedString(@"Total distance:  ", nil),distanceStr]];
-   // [self.totalDistance setText:[NSString stringWithFormat:@"%@%@",@"Total distance:  " ,distanceStr]];
+    [self.totalDistance setText:[NSString stringWithFormat:@"%@%@%@%@",NSLocalizedString(@"Total distance:", nil),@"\n",distanceStr, @" m"]];
 
     self.averageSpeed = [self setupAverageSpeed];
     [self.stackView addArrangedSubview:self.averageSpeed];
-    NSString *speedStr = [NSString stringWithFormat:@"%2f", self.route.speed];
+    NSString *speedStr = [NSString stringWithFormat:@"%.02f", self.route.speed];
 
-    [self.averageSpeed setText:[NSString stringWithFormat:@"%@%@",NSLocalizedString(@"Average speed:  ", nil),speedStr]];
-   // [self.averageSpeed setText:[NSString stringWithFormat:@"%@%@",@"Average speed:  " ,speedStr]];
+    [self.averageSpeed setText:[NSString stringWithFormat:@"%@%@%@%@",NSLocalizedString(@"Average speed:", nil),@"\n",speedStr, @" m/s"]];
 
     CGFloat _screenSize = MAX([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
     CGFloat _spacing = _screenSize/50;
@@ -69,7 +72,6 @@
 
             [self.averageSpeed.leadingAnchor constraintEqualToAnchor:self.stackView.leadingAnchor],
             [self.averageSpeed.trailingAnchor constraintEqualToAnchor:self.stackView.trailingAnchor],
-        //    [self.averageSpeed.bottomAnchor constraintEqualToAnchor:self.stackView.bottomAnchor],
     ]];
 
 
@@ -85,25 +87,29 @@
 - (UITextView *)setupTotalTime {
     UITextView *label = [UITextView new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
+    label.backgroundColor = [UIColor colorWithRed:0.77 green:0.87 blue:0.90 alpha:1.0];
     label.textColor = [UIColor blackColor];
-    label.textAlignment = UITextAlignmentLeft;
-    [label setFont:[UIFont fontWithName:@"Arial-BoldItalicMT" size:30]];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.text
+    [label setFont:[UIFont fontWithName:@"GillSans" size:30]];
     return label;
 }
 - (UITextView *)setupTotalDistance {
     UITextView *label = [UITextView new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
+    label.backgroundColor = [UIColor colorWithRed:0.77 green:0.87 blue:0.90 alpha:1.0];
     label.textColor = [UIColor blackColor];
-    label.textAlignment = UITextAlignmentLeft;
-    [label setFont:[UIFont fontWithName:@"Arial-BoldItalicMT" size:30]];
+    label.textAlignment = NSTextAlignmentCenter;
+    [label setFont:[UIFont fontWithName:@"GillSans" size:30]];
     return label;
 }
 - (UITextView *)setupAverageSpeed {
     UITextView *label = [UITextView new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
+    label.backgroundColor = [UIColor colorWithRed:0.77 green:0.87 blue:0.90 alpha:1.0];
     label.textColor = [UIColor blackColor];
-    label.textAlignment = UITextAlignmentLeft;
-    [label setFont:[UIFont fontWithName:@"Arial-BoldItalicMT" size:30]];
+    label.textAlignment = NSTextAlignmentCenter;
+    [label setFont:[UIFont fontWithName:@"GillSans" size:30]];
     return label;
 }
 - (void)didReceiveMemoryWarning {
