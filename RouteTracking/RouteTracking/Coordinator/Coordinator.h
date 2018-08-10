@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol Coordinator <NSObject>
-- (void) start;
+- (void)start;
 @end

@@ -4,8 +4,10 @@
 //
 
 #import "UIKit/UIKit.h"
+
 @class Route;
+
 @interface RouteDetailsViewController : UIViewController
-@property (strong, nonatomic) Route *route;
+@property(strong, nonatomic) Route *route;
 @end
 

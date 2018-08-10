@@ -7,8 +7,9 @@
 
 
 @interface Route : NSObject
-@property (readonly, nonatomic) CGFloat time;
-@property (readonly, nonatomic) CGFloat distance;
-@property (readonly, nonatomic) CGFloat speed;
--(instancetype) initWithTime:(NSTimeInterval)time distance:(CGFloat)distance;
+@property(readonly, nonatomic) CGFloat time;
+@property(readonly, nonatomic) CGFloat distance;
+@property(readonly, nonatomic) CGFloat speed;
+
+- (instancetype)initWithTime:(NSTimeInterval)time distance:(CGFloat)distance;
 @end

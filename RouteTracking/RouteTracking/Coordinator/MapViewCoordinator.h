@@ -7,6 +7,6 @@
 #import "Coordinator.h"
 
 @interface MapViewCoordinator : NSObject <Coordinator>
-- (instancetype) initWithPresenter:(UINavigationController *) presenter;
+- (instancetype)initWithPresenter:(UINavigationController *)presenter;
 
 @end

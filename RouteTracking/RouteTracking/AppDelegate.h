@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class AppCoordinator;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-@property (nonatomic) AppCoordinator *appCoordinator;
+@property(strong, nonatomic) UIWindow *window;
+@property(nonatomic) AppCoordinator *appCoordinator;
 
 @end

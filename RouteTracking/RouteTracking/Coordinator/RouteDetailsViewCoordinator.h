@@ -5,9 +5,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Coordinator.h"
+
 @class Route;
-@protocol MapViewControllerDelegate;
-@interface RouteDetailsViewCoordinator : NSObject<Coordinator>
-- (instancetype) initWithPresenter:(UINavigationController *) presenter route:(Route *)routel;
-@property  (nonatomic) NSObject <MapViewControllerDelegate> *delegate;
+
+@interface RouteDetailsViewCoordinator : NSObject <Coordinator>
+- (instancetype)initWithPresenter:(UINavigationController *)presenter route:(Route *)routel;
+
 @end

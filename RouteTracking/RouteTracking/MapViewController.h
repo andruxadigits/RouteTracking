@@ -14,7 +14,8 @@
 - (void)selectedRouteDetailButton:(Route *)route;
 @end
 
+//typedef void(^MapDetail)(Route *route);
 @interface MapViewController : UIViewController
+//- (void) showMapDetail:(MapDetail)mapdetail;
 @property(nonatomic) NSObject <MapViewControllerDelegate> *delegate;
-
 @end
